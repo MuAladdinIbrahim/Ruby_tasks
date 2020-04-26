@@ -1,18 +1,2 @@
-<%= form_with scope: :article, url: articles_path, local: true do |form| %>
-<%# after add url: articles_path >>run rails routes %>
-  <p>
-    <%= form.label :title %><br>
-    <%= form.text_field :title %>
-  </p>
- 
-  <p>
-    <%= form.label :text %><br>
-    <%= form.text_area :text %>
-  </p>
- 
-  <p>
-  <%# hit /articles/new with post verb > before adding url: articles_path%>
-    <%= form.submit  %>
-  </p>
-<% end %>
+<%= render 'form' %>
 <%= link_to 'Back', articles_path %>

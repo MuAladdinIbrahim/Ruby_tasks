@@ -1,0 +1,8 @@
+<h1>Edit Article</h1>
+ 
+<% if can? :crud, @article %>
+    <%= link_to 'Destroy', article_path(@article),method: :delete,data: { confirm: 'Are you sure?' } %>
+    <%= render 'form' %>
+<%end%>
+ 
+<%= link_to 'Back', articles_path %>
