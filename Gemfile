@@ -19,6 +19,9 @@ gem 'jwt'
 #c easy way to create services, facilitates the connection between the controller and the model
 gem 'simple_command'
 
+gem 'active_model_serializers', '~> 0.10.0'
+
+
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
